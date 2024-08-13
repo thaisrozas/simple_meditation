@@ -1,8 +1,10 @@
-import Layout from "./layout";
 import "./globals.css";
+import LandingPage from "@/pages/LandingPage";
 
 export default function Home() {
   return (
-      <Layout></Layout>
+    <>
+      <LandingPage></LandingPage>
+    </>
   );
 }
