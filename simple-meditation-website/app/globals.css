@@ -23,11 +23,14 @@
 
 .heading5{
   color: var(--grey);
+  margin: 1.2rem;
 }
 
 .heading6{
   color: var(--white);
   font-weight: 600;
+  margin: 1.2rem;
+  padding: 0.7rem;
 }
 
 .head{
