@@ -1,11 +1,15 @@
 import React from "react";
+import { DropdownToggle, DropdownMenu, DropdownItem } from "react-bootstrap";
 //css only imported in global files
+import Dropdown from 'react-bootstrap/Dropdown';
+import NavItem from 'react-bootstrap/NavItem';
+import NavLink from 'react-bootstrap/NavLink';
 
 
-export default function Footer(){
+export default function Footer() {
     return (
-        <footer>
-            <h2 className="text">Eu sou um footer!</h2>
-        </footer>
+        <>
+            <h2></h2>
+        </>
     );
 }
