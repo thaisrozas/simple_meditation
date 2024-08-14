@@ -4,13 +4,9 @@ import React, { useState } from "react";
 import Nav from 'react-bootstrap/Nav';
 import NavLink from "react-bootstrap/NavLink";
 import { Navbar, NavbarBrand, NavItem, NavbarCollapse, NavbarToggle, NavDropdown, DropdownItem, Dropdown, DropdownMenu, DropdownToggle } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
-
+import NavbarItem from "./NavbarItem";
 
 export default function Header() {
-
-    // const [hover, setHover] = useState("hide");
-
 
     return (
         <Navbar className="head">
@@ -20,24 +16,12 @@ export default function Header() {
             </NavbarBrand>
 
             <Nav activeKey="/home" className="nav-itens" as="ul">
-                <NavItem as="li" className="nav-itens-item">
-                    <NavLink href="#" className="heading5">About</NavLink>
-                </NavItem>
-                <NavItem as="li" className="nav-itens-item">
-                    <NavLink href="#" className="heading5">Community</NavLink>
-                </NavItem>
-                <NavItem as="li" className="nav-itens-item">
-                    <NavLink href="#" className="heading5">Meditation</NavLink>
-                </NavItem>
-                <NavItem as="li" className="nav-itens-item">
-                    <NavLink href="#" className="heading5">Plans</NavLink>
-                </NavItem>
-                <NavItem as="li" className="nav-itens-item">
-                    <NavLink href="#" className="heading5">Sign In</NavLink>
-                </NavItem>
-                <NavItem as="li" className="nav-itens-item">
-                    <NavLink href="#" className="register heading6">Register</NavLink>
-                </NavItem>
+                <NavbarItem classLink="heading5" classNav="nav-itens-item" item="About"></NavbarItem>
+                <NavbarItem classLink="heading5" classNav="nav-itens-item" item="Community"></NavbarItem>
+                <NavbarItem classLink="heading5" classNav="nav-itens-item" item="Meditation"></NavbarItem>
+                <NavbarItem classLink="heading5" classNav="nav-itens-item" item="Plans"></NavbarItem>
+                <NavbarItem classLink="heading5" classNav="nav-itens-item" item="Sign In"></NavbarItem>
+                <NavbarItem classLink="heading6" classNav="nav-itens-item__register" item="Register"></NavbarItem>
             </Nav>
         </Navbar>
     );

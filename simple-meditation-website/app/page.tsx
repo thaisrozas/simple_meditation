@@ -1,6 +1,6 @@
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LandingPage from "@/pages/LandingPage";
+import LandingPage from "@/pages/Home";
 import Head  from "next/head";
 
 export default function Home() {
