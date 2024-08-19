@@ -24,7 +24,7 @@ export default function Footer() {
               src="simple-meditation-logo-removebg.png"
             />
             <h4 className="logo-heading marginDefault">Simple meditation</h4>
-            <p className="textDefault">
+            <p className="textFooter">
             Join the Simple Meditation community and discover the power of meditation to transform your life. Relieve stress, improve your focus, and achieve inner peace. Sign up now to start your journey towards well-being and tranquility.
             </p>
             {/* not based on the component navbaritem */}

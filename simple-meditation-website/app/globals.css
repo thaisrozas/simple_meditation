@@ -8,8 +8,10 @@
   --purple: #6b2eb8;
   --lightgrey: #E6E7F2;
   --grey: #3F414E;
+  --darkgrey: #23242a;
   --white: #FFFFFF;
   --darkpurple: #2A0134;
+  --lighterpurple: #f6f1fc;
 }
 
 /* headings from website */
@@ -85,9 +87,15 @@
 
 /* styles for footer and nav bar */
 footer{
-  background-color: var(--lightpurple);
+  background-color: var(--darkpurple);
   min-height: 20rem;
   padding: 2rem 0 2rem 0 
+}
+
+.textFooter{
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem !important;
 }
 
 .logo-footer{
@@ -116,7 +124,7 @@ footer{
 }
 
 .navbar__footer-headings{
-  color: var(--darkpurple);
+  color: var(--white);
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
 }
@@ -130,14 +138,14 @@ footer{
   padding-left: 0 !important;
   font-family: 'Poppins', sans-serif;
   font-size: 0.8rem!important;
-  color: var(--grey) !important;
+  color: var(--white) !important;
 }
 
 .contentlanding{
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
   column-gap: 2rem;
 }
 
@@ -161,10 +169,57 @@ footer{
 }
 
 .contentlanding-button{
-  background-color: var(--darkpurple);
+  background-color: var(--lightblue);
   color: white;
   font-weight: 600;
   border-radius: 2rem;
   padding: 0.6rem 0.8rem;
   border: none;
+}
+
+.contentlanding__cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 4rem; 
+  column-gap: 1rem;
+}
+
+.contentlanding-card{
+  background-color: var(--lighterpurple);
+  border-radius: 1rem;
+  padding: 1.2rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.contentlanding-card__image{
+  width: 2rem;
+}
+
+.contentlanding-card__description{
+  color: var(--darkgrey);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.contentlanding-heading__secundary{
+  font-family: 'Poppins', sans-serif;
+  color: var(--grey);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contentlanding-card__icon{
+  position: relative;
+  top: -110px;
+  left: 226px;
+}
+
+.contentlanding__secundary{
+
 }

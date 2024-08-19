@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 
 import Button from "./Button";
+import Card from "./Card";
 
 export default function ContentLanding() {
   return (
@@ -35,8 +36,22 @@ export default function ContentLanding() {
               src="woman-meditation.jpg"
             />
           </section>
-          <section>
-            
+          <section className="contentlanding__cards">
+            <Card link="verified-user.svg" descriptionCard="More than 10 thousands of verified users"></Card>
+            <Card link="grade.svg" descriptionCard="More than 10 thousands of verified users"></Card>
+            <Card link="history.svg" descriptionCard="More than 10 thousands of verified users"></Card>
+            <Card link="group.svg" descriptionCard="More than 10 thousands of verified users"></Card>
+          </section>
+
+          <section className="contentlanding__secundary">
+          <article>
+              <h4 className="contentlanding-heading__secundary">
+                How doest it work?
+              </h4>
+              <p className="contentlanding-text">
+                
+              </p>
+            </article>
           </section>
         </Container>
       </main>
